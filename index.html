@@ -1,0 +1,195 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>
+			Spacebar | Login or Sign Up
+		</title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			
+			body {
+				background-color: #111;
+			}
+			
+			hr {
+				width: 70%;
+				margin-left: 15%;
+				box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+			}
+			
+			.wrapper {
+				width: 100%;
+			}
+			
+			.index-msg {
+				width: 100%;
+			}
+			
+			.index-msg h2 {
+				padding: 30px 30px 20px;
+				font-family: arial;
+				font-size: 50px;
+				color: #fff;
+				line-height: 50px;
+			}
+			
+			.index-msg p {
+				padding: 0px 30px 50px;
+				font-family: arial;
+				font-size: 25px;
+				color: #fff;
+				line-height: 24px;
+			}
+			
+			.form-base {
+				width: 100%;
+				border-radius: 20px;
+				background-color: #fff;
+				box-shadow: 0px 0px 100px 0px rgba(93, 84, 164, 0.4);
+			}
+			
+			#form-login input[type="text"], #form-login input[type="password"] {
+				padding: 14px 10px;
+				width: 300px;
+				border: 1px solid transparent;
+				background: none;
+				color: #111;
+				box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+				font-family: arial;
+				font-size: 18px;
+				display: block;
+				margin: 10px auto;
+				text-align: center;
+				outline: none;
+				border-radius: 10px;
+			}
+			
+			#form-login input[type="submit"] {
+				padding: 10px 10px;
+				width: 300px;
+				border: 0;
+				background-color: #111;
+				color: #fff;
+				font-family: arial;
+				font-size: 20px;
+				display: block;
+				margin: 10px auto;
+				text-align: center;
+				outline: none;
+				border-radius: 10px;
+				cursor: pointer;
+			}
+			
+			#fa_request {
+				padding: 5px 10px;
+				width: 300px;
+				border: 0;
+				background: none;
+				color: #111;
+				text-decoration: none;
+				font-family: arial;
+				font-size: 14px;
+				display: block;
+				margin: 10px auto;
+				text-align: center;
+				outline: none;
+				border-radius: 10px;
+				cursor: pointer;
+			}
+			
+			#fa_request:hover {
+				text-decoration: underline;
+			}
+			
+			#ca_request {
+				padding: 10px 10px;
+				width: 230px;
+				border: 0;
+				background-color: #111;
+				color: #fff;
+				text-decoration: none;
+				font-family: arial;
+				font-size: 14px;
+				display: block;
+				margin: 10px auto;
+				text-align: center;
+				outline: none;
+				border-radius: 10px;
+				cursor: pointer;
+			}
+			
+			@media only screen and (min-width: 300px) {
+				.wrapper {
+					width: 350px;
+					margin: 0 auto;
+				}
+				
+				.index-msg h2 {
+					padding: 20px 0px 0px;
+				}
+			
+				.index-msg p {
+					padding: 20px 0px 50px;
+				}
+				
+				.form-base {
+					padding-top: 10px;
+					padding-bottom: 10px;
+				}
+			}
+			
+			@media only screen and (min-width: 1000px) {
+				.wrapper {
+					width: 700px;
+					position: absolute;
+					left: 50%;
+					top: 50%;
+					transform: translate(-50%, -50%);
+				}
+				
+				.index-msg {
+					width: 50%;
+					float: left;
+				}
+				
+				.form-base {
+					width: 50%;
+					float: right;
+				}
+				
+				.index-msg h2 {
+					padding: 50px 0px 5px 0px;
+				}
+			
+				.index-msg p {
+					padding: 20px 10px 0px 0px;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wrapper">
+			<article class="index-msg">
+				<h2>spacebar</h2>
+				<p>Share some space with people and the universe around you</p>
+			</article>
+			<div class="form-base">
+				<form id="form-login" action="lo_request.php" method="get">
+					<input class="form-input" type="text" name="login-username" placeholder="Username" required>
+					<input class="form-input" type="password" name="login-password" placeholder="Password" required>
+					<input type="submit" name="" value="Log In">
+					<a id="fa_request" href="fa_request.html">Forgot Account?</a>
+					<hr>
+					<a id="ca_request" href="ca_request.html">Create New Account</a>
+				</form>
+			</div>
+		</div>
+		<script type="text/javascript">
+			
+		</script>
+	</body>
+</html>
