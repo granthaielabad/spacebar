@@ -1,0 +1,162 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>
+			Spacebar
+		</title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				outline: none;
+			}
+			
+			body {
+				background-color: #111;
+			}
+			
+			hr {
+				border: 1px solid #393e46;
+			}
+			
+			.wrapper {
+				width: 100%;
+				height: 100vh;
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				transform: translate(-50%, -50%);
+			}
+			
+			.home-userBar {
+				width: 25%;
+				height: 100vh;
+				float: left;
+				border: 0;
+				background-color: #222831;
+			}
+			
+			.form-base {
+				width: 75%;
+				float: right;
+			}
+			
+			#form-userPost {
+				padding: 10px 5px;
+			}
+			
+			#form-userPost input[type="text"], #form-userPost textarea#userText{
+				padding: 10px 10px;
+				width: 95%;
+				border: 1px solid transparent;
+				background-color: #393e46;
+				color: #fff;
+				font-family: arial;
+				font-size: 16px;
+				display: block;
+				margin: 10px auto;
+				text-align: left;
+				outline: none;
+				border-radius: 10px;
+			}
+			
+			#form-userPost input[type="submit"] {
+				padding: 10px 10px;
+				width: 45%;
+				border: 0;
+				background-color: #9d65c9;
+				color: #fff;
+				font-family: arial;
+				font-size: 14px;
+				display: block;
+				margin: 10px auto;
+				text-align: center;
+				outline: none;
+				border-radius: 20px;
+				cursor: pointer;
+			}
+		
+			#form-userPost textarea#userText {
+				height: 20vh;
+			}
+		
+			#userDefault {
+				height: 10vh;
+				padding: 20px 10px 10px 10px;
+				display: grid;
+				grid-template-columns: 65px 0px;
+				grid-template-rows: 1fr 1fr;
+			}
+			
+			#homBtnWrap .homlnk{
+				color: #fff;
+				font-family: arial;
+				font-size: 29px;
+				text-decoration: none;
+			}
+		
+			#homBtnWrap {
+				width: 30px;
+				height: 30px;
+				padding: 10px 10px;
+				text-align: center;
+				border-radius: 50px;
+				background-image: linear-gradient(#2a3d66, #5d54a4);
+			}
+
+			#searchBarWrapper {
+				width: 210px;
+				height: 30px;
+				padding: 10px 20px;
+				background-color: #393e46;
+				color: #fff;
+				text-align: left;
+				border-radius: 50px;
+			}
+		
+			#searchBar input[type="text"]{
+				width: 210px;
+				height: 100%;
+				border: 1px solid transparent;
+				background-color: #393e46;
+				color: #fff;
+				font-family: arial;
+				font-size: 16px;
+				text-align: left;
+			}
+			
+			#sHome {
+				user-select: none;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="home-userBar">
+				<div id="userDefault">
+					<div id="homBtnWrap">
+						<a href="home.html" class="homlnk"><h2 id="sHome">S</h2></a>
+					</div>
+					<div id="searchBarWrapper">
+						<form id="searchBar" action="#" method="GET">
+							<input id="searchBarBar" type="text" placeholder="Search Spacebar">
+						</form>
+					</div>
+				</div>
+				<hr>
+				<form id="form-userPost" action="#" method="POST">
+					<input class="userPost" type="text" name="userInputPost" placeholder="Subject">
+					<textarea id="userText" placeholder="Story"></textarea>
+					<input type="submit" name="" value="Share">
+				</form>
+			</div>
+			<div class="form-base">
+				
+			</div>
+		</div>
+		<script type="text/javascript">
+			
+		</script>
+	</body>
+</html>
