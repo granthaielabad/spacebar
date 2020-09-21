@@ -10,6 +10,17 @@ This repository will contain all necessary files for the building of spacebar (a
 ### What is spacebar for? Why does it have to exist in the first place? What is its relevance to the people who were already connected around the globe?
 - Well, I haven't thought about it that much really. I just thought that I wanna build a place, a fun place where people can enjoy sharing contents and have good discussions.
 
-### Updates
+# UPDATES
 - I just realized how convenient node.js was; therefore I will move the environment on node.js
 - Did couple of modifications to the structure of homepage, client-side
+  - [x] display: grid; grid-template-columns: ''; grid-template-rows: '';
+
+## Pseudoflow - INTRO
+### What is pseudoflow?
+- Pseudoflow, also 'false-flow', is just flowchart and pseudocode combined altogether.
+### Where will it be used?
+- Well, it can be accessed via Projects section; you'll see it right there entitled as 'pseudoflow'
+### Why it should be used?
+- For abstract design and application on framewor builds; I dunno, just use it.
+### How is it formatted?
+- I haven't thought of it that much; I just use it when necessary. I still yet to make an update about its format.
