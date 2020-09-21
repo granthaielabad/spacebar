@@ -13,6 +13,8 @@
 				box-sizing: border-box;
 				outline: 1px dashed tomato;
 			}
+			
+
 			#mainbase {
 				display: grid;
 				grid-template-columns: 20% 80%;
@@ -23,38 +25,52 @@
 				grid-template-columns: 100%;
 				grid-template-rows: 10% 90%;
 			}
-			#usercardbase {
-				padding: 3%;
-			}
 			#usercard {
 				display: grid;
 				grid-template-columns: auto;
 				grid-template-rows: auto auto auto;
 			}
-			#usersubjectinput, #userstoryinput {
+			#usersubjectinput, #userstoryinput, #notepasteinput {
 				margin: 0px 0px 10px 0px;
 				padding: 10px;
 				text-align: left;
 			}
-			#usersharebutton, #usertagsinput {
+			#usersharebutton, #usertagsinput, #notepastepost, #notepastePS {
 				padding: 10px;
 			}
-			#usersubjectinput {
+			#usersubjectinput, {
 				width: 100%;
 			}
 			#userstoryinput {
 				height: 30vh;
 			}
-			#tagbtnrow, #informationbase, #useraccbase {
+			#notepasteinput {
+				height: 20vh;
+			}
+			#notepastebase {
 				display: grid;
-				grid-template-columns: 50% 50%;
-				grid-template-rows: auto;
+				grid-template-columns: auto;
+				grid-template-rows: 60% 40%;
 			}
 			#feedbase {
 				display: grid;
 				grid-template-columns: 75% 25%;
 				grid-template-rows: auto;
 			}
+			
+
+			.cardbasewrap {
+				padding: 3%;
+			}
+			.inputwidthwrap {
+				width: 100%;
+			}
+			.GTC02_GTRauto {
+				display: grid;
+				grid-template-columns: 50% 50%;
+				grid-template-rows: auto;
+			}
+			
 		</style>
 	</head>
 	<body>
@@ -64,7 +80,7 @@
 			homebase
 			</div>
 			
-			<div id="informationbase">
+			<div id="informationbase" class="GTC02_GTRauto">
 				<div id="newsbase">
 				newsbase
 				</div>
@@ -74,7 +90,7 @@
 			</div>
 			
 			<div id="userbase">
-				<div id="useraccbase">
+				<div id="useraccbase" class="GTC02_GTRauto">
 					<div id="accountdir">
 					accountdir
 					</div>
@@ -82,11 +98,11 @@
 					optionsdir
 					</div>
 				</div>
-				<div id="usercardbase">
+				<div id="usercardbase" class="cardbasewrap">
 					<form id="usercard">
 						<input id="usersubjectinput" type="text" placeholder="Subject">
-						<textarea id="userstoryinput" placeholder="Story"></textarea>
-						<div id="tagbtnrow">
+						<textarea id="userstoryinput" class="inputwidthwrap" placeholder="Story"></textarea>
+						<div id="user_btntagbar" class="GTC02_GTRauto">
 						<input id="usersharebutton" type="submit" value="Sharespace">
 						<textarea id="usertagsinput" placeholder="Tags"></textarea>
 						</div>
@@ -99,7 +115,18 @@
 				newsfeedbase
 				</div>
 				<div id="notepastebase">
-				notepastebase
+					<div id="notepastefeedbase">
+					notepastefeedbase
+					</div>
+					<div id="notepastecardbase" class="cardbasewrap">
+						<form id="notepastecard">
+							<textarea id="notepasteinput" class="inputwidthwrap" placeholder="Notes"></textarea>
+							<div id="notepaste_btntagbar" class="GTC02_GTRauto">
+							<textarea id="notepastePS" placeholder="P.S."></textarea>
+							<input id="notepastepost" type="submit" value="Paste">
+							</div>
+						</form>
+					</div>
 				</div>
 			</div>
 
