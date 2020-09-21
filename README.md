@@ -9,3 +9,7 @@ This repository will contain all necessary files for the building of spacebar (a
 
 ### What is spacebar for? Why does it have to exist in the first place? What is its relevance to the people who were already connected around the globe?
 - Well, I haven't thought about it that much really. I just thought that I wanna build a place, a fun place where people can enjoy sharing contents and have good discussions.
+
+### Updates
+- I just realized how convenient node.js was; therefore I will move the environment on node.js
+- Did couple of modifications to the structure of homepage, client-side
