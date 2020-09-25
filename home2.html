@@ -10,10 +10,33 @@
 				margin: 0;
 				padding: 0;
 				font-family: arial;
+				color: white;
 				box-sizing: border-box;
-				outline: 1px dashed tomato;
 			}
-			
+			body {
+				background-color: #111;
+			}
+			form input[type="text"], textarea{
+				border: 1px solid #333333;
+				border-radius: 6px;
+				background-color: #1a1a1a;
+				color: #fff;
+			}
+			form input[type="text"]:focus, textarea:focus{
+				outline: none;
+				border: 1px solid #f655f6;
+			}
+			form input[type="submit"] {
+				border: 1px solid #f655f6;
+				border-radius: 6px;
+				background-color: #1a1a1a;
+				color: #fff;
+			}
+			form input[type="submit"]:hover {
+				background-color: #f655f6;
+				font-style: bold;
+				cursor: pointer;
+			}
 
 			#mainbase {
 				display: grid;
@@ -57,7 +80,27 @@
 				grid-template-columns: 75% 25%;
 				grid-template-rows: auto;
 			}
-			
+			#homebase, #informationbase {
+				background-color: #1a1a1a;
+				border-bottom: 1px solid #f655f6;
+			}
+			#useraccbase, #usercardbase {
+				border-right: 1px solid #f655f6;
+			}
+			#usersharebuttonbase, #notepastePSbase {
+				margin: 0px 4% 0px 0px;
+			}
+			#usertagsinputbase, #notepastepostbase {
+				margin: 0px 0px 0px 4%;
+			}
+			#notepastebase {
+				border-left: 1px solid #f655f6;
+			}
+			#notepastefeedbase {
+				display: grid;
+				grid-template-columns: auto;
+				grid-template-rows: auto;
+			}
 
 			.cardbasewrap {
 				padding: 3%;
@@ -70,6 +113,11 @@
 				grid-template-columns: 50% 50%;
 				grid-template-rows: auto;
 			}
+			.GTCauto_GTRauto {
+				display: grid;
+				grid-template-columns: auto;
+				grid-template-rows: auto;
+			}
 			
 		</style>
 	</head>
@@ -77,7 +125,7 @@
 		<div id="mainbase">
 
 			<div id="homebase">
-			homebase
+				homebase
 			</div>
 			
 			<div id="informationbase" class="GTC02_GTRauto">
@@ -103,8 +151,12 @@
 						<input id="usersubjectinput" type="text" placeholder="Subject">
 						<textarea id="userstoryinput" class="inputwidthwrap" placeholder="Story"></textarea>
 						<div id="user_btntagbar" class="GTC02_GTRauto">
-						<input id="usersharebutton" type="submit" value="Sharespace">
-						<textarea id="usertagsinput" placeholder="Tags"></textarea>
+							<div id="usersharebuttonbase" class="GTCauto_GTRauto">
+								<input id="usersharebutton" type="submit" value="Sharespace">
+							</div>
+							<div id="usertagsinputbase" class="GTCauto_GTRauto">
+								<textarea id="usertagsinput" placeholder="Tags"></textarea>
+							</div>
 						</div>
 					</form>
 				</div>
@@ -116,14 +168,19 @@
 				</div>
 				<div id="notepastebase">
 					<div id="notepastefeedbase">
-					notepastefeedbase
+						<div id="notepastecardbase">
+						</div>
 					</div>
 					<div id="notepastecardbase" class="cardbasewrap">
 						<form id="notepastecard">
 							<textarea id="notepasteinput" class="inputwidthwrap" placeholder="Notes"></textarea>
 							<div id="notepaste_btntagbar" class="GTC02_GTRauto">
-							<textarea id="notepastePS" placeholder="P.S."></textarea>
-							<input id="notepastepost" type="submit" value="Paste">
+								<div id="notepastePSbase" class="GTCauto_GTRauto">
+									<textarea id="notepastePS" placeholder="P.S."></textarea>
+								</div>
+								<div id="notepastepostbase" class="GTCauto_GTRauto">
+									<input id="notepastepost" type="submit" value="Paste">
+								</div>
 							</div>
 						</form>
 					</div>
