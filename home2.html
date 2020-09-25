@@ -12,20 +12,22 @@
 				font-family: arial;
 				color: white;
 				box-sizing: border-box;
-				outline: 1px dashed tomato;
 			}
 			body {
 				background-color: #111;
 			}
-			form input[type="text"], textarea{
+			form input[type="text"], textarea {
 				border: 1px solid #333333;
 				border-radius: 6px;
 				background-color: #1a1a1a;
 				color: #fff;
 			}
-			form input[type="text"]:focus, textarea:focus{
+			form input[type="text"]:focus, textarea:focus {
 				outline: none;
 				border: 1px solid #f655f6;
+			}
+			form input[type="text"]:hover, textarea:hover {
+				background-color: #333333;
 			}
 			form input[type="submit"] {
 				border: 1px solid #f655f6;
@@ -43,6 +45,10 @@
 				display: grid;
 				grid-template-columns: 20% 80%;
 				grid-template-rows: 10vh 90vh;
+			}
+			#homebase, #informationbase {
+				background-color: #1a1a1a;
+				border-bottom: 1px solid #333333;
 			}
 			#userbase {
 				display: grid;
@@ -62,31 +68,19 @@
 			#usersharebutton, #usertagsinput, #notepastepost, #notepastePS {
 				padding: 10px;
 			}
-			#usersubjectinput, {
-				width: 100%;
+			#usersubjectinput {
+				width: auto;
 			}
 			#userstoryinput {
 				height: 30vh;
 			}
-			#notepasteinput {
-				height: 20vh;
+			#useraccbase, #usercardbase {
+				border-right: 1px solid #333333;
 			}
-			#notepastebase {
-				display: grid;
-				grid-template-columns: auto;
-				grid-template-rows: 60% 40%;
-			}
-			#feedbase {
+			#useraccbase {
 				display: grid;
 				grid-template-columns: 75% 25%;
 				grid-template-rows: auto;
-			}
-			#homebase, #informationbase {
-				background-color: #1a1a1a;
-				border-bottom: 1px solid #f655f6;
-			}
-			#useraccbase, #usercardbase {
-				border-right: 1px solid #f655f6;
 			}
 			#usersharebuttonbase, #notepastePSbase {
 				margin: 0px 4% 0px 0px;
@@ -97,17 +91,53 @@
 			#user_btntagbar {
 				height: 100%;
 			}
+			#notepasteinput {
+				height: 20vh;
+			}
 			#notepastebase {
-				border-left: 1px solid #f655f6;
+				display: grid;
+				grid-template-columns: auto;
+				grid-template-rows: 64% 36%;
+				border-left: 1px solid #333333;
 			}
 			#notepastefeedbase {
 				display: grid;
 				grid-template-columns: auto;
 				grid-template-rows: auto;
 			}
+			#feedbase {
+				display: grid;
+				grid-template-columns: 75% 25%;
+				grid-template-rows: auto;
+			}
+			#accountdir, #optionsdir {
+				display: grid;
+				grid-template-columns: auto;
+				grid-template-rows: auto;
+			}
+			#accountdirbtn {
+				margin: 3% 0% 3% 4%;
+				border-top-left-radius: 6px;
+				border-bottom-left-radius: 6px;
+				border-top: 1px solid #333333;
+				border-left: 1px solid #333333;
+				border-bottom: 1px solid #333333;
+				border-right: none;
+			}
+			#optionsdirbtn {
+				margin: 9% 12% 9% 0%;
+				border-top-right-radius: 6px;
+				border-bottom-right-radius: 6px;
+				border-top: 1px solid #333333;
+				border-left: none;
+				border-bottom: 1px solid #333333;
+				border-right: 1px solid #333333;
+			}
+
 
 			.cardbasewrap {
 				padding: 3%;
+				border-top: 1px solid #1a1a1a;
 			}
 			.inputwidthwrap {
 				width: 100%;
@@ -121,6 +151,12 @@
 				display: grid;
 				grid-template-columns: auto;
 				grid-template-rows: auto;
+			}
+			.userbtnrowbtn {
+				background-color: #1a1a1a
+			}
+			.userbtnrowbtn:hover {
+				background-color: #262626;
 			}
 			
 		</style>
@@ -142,12 +178,16 @@
 			</div>
 			
 			<div id="userbase">
-				<div id="useraccbase" class="GTC02_GTRauto">
+				<div id="useraccbase">
 					<div id="accountdir">
-					accountdir
+						<div id="accountdirbtn" class="userbtnrowbtn">
+							
+						</div>
 					</div>
 					<div id="optionsdir">
-					optionsdir
+						<div id="optionsdirbtn" class="userbtnrowbtn">
+							 
+						</div>
 					</div>
 				</div>
 				<div id="usercardbase" class="cardbasewrap">
@@ -180,7 +220,7 @@
 							<textarea id="notepasteinput" class="inputwidthwrap" placeholder="Notes"></textarea>
 							<div id="notepaste_btntagbar" class="GTC02_GTRauto">
 								<div id="notepastePSbase" class="GTCauto_GTRauto">
-									<textarea id="notepastePS" placeholder="P.S."></textarea>
+									<textarea id="notepastePS" placeholder="PS"></textarea>
 								</div>
 								<div id="notepastepostbase" class="GTCauto_GTRauto">
 									<input id="notepastepost" type="submit" value="Paste">
