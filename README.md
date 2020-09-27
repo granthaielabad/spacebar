@@ -1,4 +1,6 @@
 # UPDATES
+- Replaced home2.html of index.html; now the former index.html is the la_request.html
+- The site now uses AJAX
 - I just realized how convenient node.js was; therefore I will move the environment on node.js
 - Did couple of modifications to the structure of homepage, client-side
   - [x] display: grid; grid-template-columns: ''; grid-template-rows: '';
