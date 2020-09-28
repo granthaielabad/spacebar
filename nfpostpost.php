@@ -1,6 +1,6 @@
 <?php
 	include 'connection.php';
-	$select = mysqli_select_db($connection, $dbName);	//select db from established connection
+	$select = mysqli_select_db($connection, $dbName); //select db from established connection
 	//with $connection and $select === [string host, string username, string passwd, dbname]
 	
 	$dollarStr = "$";//'$' string; in able to be included within another string
