@@ -1,0 +1,24 @@
+<svg width="1600" height="1600" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+ <defs>
+  <filter height="200%" width="200%" y="-50%" x="-50%" id="svg_4_blur">
+   <feGaussianBlur stdDeviation="1" in="SourceGraphic"/>
+  </filter>
+  <filter height="200%" width="200%" y="-50%" x="-50%" id="svg_11_blur">
+   <feGaussianBlur stdDeviation="10" in="SourceGraphic"/>
+  </filter>
+ </defs>
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="1602" width="1602" y="-1" x="-1"/>
+  <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
+   <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"/>
+  </g>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <text stroke="#000" transform="matrix(1.4905529498709598,0,0,1,-584.1653948421952,0) " xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="250" id="svg_3" y="1243.35075" x="1230.017" stroke-width="0" fill="#000000"/>
+  <path stroke="#000" filter="url(#svg_11_blur)" id="svg_11" d="m29.65845,36.0919l763.36324,0l0,0c421.59394,0 763.36324,344.75423 763.36324,770.03016c0,425.27598 -341.7693,770.03016 -763.36324,770.03016l-763.36324,0l0,-1540.06032z" stroke-width="0" fill="#191919"/>
+  <text filter="url(#svg_4_blur)" font-weight="bold" stroke="#000" transform="matrix(8.1567227796877,0,0,6.824547755615558,-10575.621295186187,-7372.421307995685) " xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="250" id="svg_4" y="1285.91358" x="1313.82122" stroke-opacity="null" stroke-width="0" fill="#ffffff">S</text>
+ </g>
+</svg>
